@@ -1,6 +1,6 @@
 # Doçentlik Hesaplama Aracı - Modüller
 
-Bu depo, [Doçentlik Puanı Hesaplama Aracı](http://www.atasoyweb.net/Docentlik-Puani-Hesaplama-Araci) için gerekli modülleri içermektedir. Sayfadaki arayüz, bu modüllerde yer alan verilere göre otomatik olarak oluşturulmakta ve hesaplar bu modüllerde yer alan direktiflere göre *DocentlikCekirdek* sınıfı tarafından yapılmaktadır. Modüllerin yazımına veya kurallarda değişiklik meydana geldiğinde güncellenmesine katkı sağlamak isterseniz [Doçentlik Başvuru Şartları](https://www.uak.gov.tr/Sayfalar/docentlik/basvuru-sartlari/2020-ekim-d%C3%B6nemi.aspx)'nın, buradaki "src/" dizini altında yer alan php sınıflarına uyarlanmasına yardımcı olabilirsiniz. (Arayüzün hazırlanması ve işlemlerin yapılmasından sorumlu sınıf olan *DocentlikCekirdek* sınıfı kaynak kodlara dahil değildir.)
+Bu depo, [Doçentlik Puanı Hesaplama Aracı](http://www.atasoyweb.net/Docentlik-Puani-Hesaplama-Araci) için gerekli modülleri içermektedir. Hesaplama aracındaki arayüz, bu modüllerde yer alan verilere göre otomatik olarak oluşturulmakta ve hesaplar bu modüllerde yer alan direktiflere göre *DocentlikCekirdek* sınıfı tarafından yapılmaktadır. Modüllerin yazımına veya kurallarda değişiklik meydana geldiğinde güncellenmesine katkı sağlamak isterseniz [Doçentlik Başvuru Şartları](https://www.uak.gov.tr/Sayfalar/docentlik/basvuru-sartlari/2020-ekim-d%C3%B6nemi.aspx)'nın, buradaki "src/" dizini altında yer alan php sınıflarına uyarlanmasına yardımcı olabilirsiniz. (Arayüzün hazırlanması ve işlemlerin yapılmasından sorumlu sınıf olan *DocentlikCekirdek* sınıfı kaynak kodlara dahil değildir.)
 
 ## Güncel Modüller
 * **T9.php [12/01/2021]:** Tablo 9 - Mühendislik Temel Alanı
@@ -47,7 +47,7 @@ Limit tanımları, limite tabi işlem sonuçlarını belli bir üst limit ile s�
 )
 ```
 ### Koşullar
-İşlem adları belirtilen işlemlerin sonuçlarının belirlenen koşula uyup uymadığını kontrol eder. Uymuyorsa kullanıcıya verilecek mesajı da tutar. Dizinin en üst düzeyinde, ana madde düzeyinde ve alt madde düzeyinde tanımlanabilir. *'saglanamazsa'* içerisindeki {MNo} ve {AltMNo} ifadeleri, içinde tanımlı oldukları madde ve alt madde numaraları ile değiştirilir.
+İşlem adları belirtilen işlemlerin sonuçlarının belirlenen koşula uyup uymadığını kontrol eder. Uymuyorsa kullanıcıya verilecek mesajı da tutar. Dizinin en üst düzeyinde, ana madde düzeyinde ve alt madde düzeyinde tanımlanabilir. *'saglanamazsa'* içerisine yazılan {MNo} ve {AltMNo} ifadeleri, madde veya alt madde içindeyse, içinde tanımlı oldukları madde ve alt madde numaraları ile değiştirilir.
 
 Örneğin aşağıdaki tanım, islem1 işleminin sonucu 4 veya 4'ten büyük olmazsa, *'saglanamazsa'* içerisinde belirtilen ifade kullanıcıya yansıtılır.
 ```php
