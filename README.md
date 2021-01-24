@@ -3,8 +3,8 @@
 Bu depo, [Doçentlik Puanı Hesaplama Aracı](http://www.atasoyweb.net/Docentlik-Puani-Hesaplama-Araci) için gerekli modülleri içermektedir. Hesaplama aracındaki arayüz, bu modüllerde yer alan verilere göre otomatik olarak oluşturulmakta ve hesaplar bu modüllerde yer alan direktiflere göre *DocentlikCekirdek* sınıfı tarafından yapılmaktadır. Modüller [Doçentlik Başvuru Şartları](https://www.uak.gov.tr/Sayfalar/docentlik/basvuru-sartlari/2020-ekim-d%C3%B6nemi.aspx) dikkate alınarak hazırlanmaktadır. (Arayüzün hazırlanması ve işlemlerin yapılmasından sorumlu sınıf olan *DocentlikCekirdek* sınıfı şimdilik kaynak kodlara dahil değildir.)
 
 ## Güncel Modüller
-* **T9.php [12/01/2021]:** Tablo 9 - Mühendislik Temel Alanı
 * **T8.php [23/01/2021]:** Tablo 8 - Mimarlık, Planlama ve Tasarım Temel Alanı
+* **T9.php [12/01/2021]:** Tablo 9 - Mühendislik Temel Alanı
 
 ## Genel Yapı
 Modüller, *DocentlikCekirdek* sınıfının üyelerini miras alan birer php sınıfıdır.
@@ -62,7 +62,7 @@ Limit tanımları, limite tabi işlem sonuçlarını belli bir üst limit ile s�
 )						
 ```
 ### Mantıksal İşlemler
-Koşullar arasında mantıksal ve / veya işlemleri gerçekleştirir ve sonucu, işlemin tanımlı olduğu koşulun sonucu olarak belirler. Sadece koşul düzeyinde tanımlanmalıdır.
+Koşullar arasında mantıksal ve/veya işlemleri gerçekleştirir ve sonucu, işlemin tanımlı olduğu koşulun sonucu olarak belirler. Koşulun mantıksal değil'i alınacaksa başına ! işareti konabilir. Sadece koşul düzeyinde tanımlanmalıdır.
 
 Örneğin aşağıdaki koşul, kendisi veya *ornekkosul* koşulu sağlanmışsa, sağlanmış sayılır. Her ikisi de sağlanamadığında *'saglanamazsa'* kısmındaki cümle kullanıcıya yansır.
 ```php
@@ -80,5 +80,5 @@ array(
 )
 ```
 ### Kullanıcı Arayüzü
-Kullanıcı arayüzü, yerleştirilen alt madde tanımlarındaki '*tip*' değişkenindeki içeriğe göre hazırlanır. Bu değişken T, S, B, Z ve K harflerinin herhangi bir kombinasyonu veya *'evethayir'* olabilir. Kullanıcı bir faaliyet eklediğinde, bu harflerden hangileri '*tip*' kısmına girilmişse, sırayla '**T**oplam kaç kişi', 'kaçıncı **S**ıra', '**B**aş yazar', '**Z**amanlama' ve '**K** tane' seçeneklerinin kullanıcıya görünmesini sağlarlar.
+Kullanıcı arayüzü, yerleştirilen alt madde tanımlarındaki '*tip*' değişkenindeki içeriğe göre hazırlanır. Bu değişken T, S, B, Z ve K harflerinin herhangi bir kombinasyonu veya *'evethayir'* olabilir. Kullanıcı bir faaliyet eklediğinde, bu harflerden hangileri '*tip*' kısmına girilmişse, sırayla '**T**oplam kaç kişi', 'kaçıncı **S**ıra', '**B**aş yazar', '**Z**amanlama' ve '**K**aç tane' seçeneklerinin kullanıcıya görünmesini sağlarlar.
 *'tip'=>'evethayir'* olarak girildiğinde, kullanıcıya yalnızca Evet ve Hayır seçenekleri sunulur. Hayır seçeneği 0, Evet seçeneği ise *'puan'* değeri kadar puan alır.
