@@ -1,6 +1,6 @@
 # Doçentlik Hesaplama Aracı - Modüller
 
-Bu depo, [Doçentlik Puanı Hesaplama Aracı](http://www.atasoyweb.net/Docentlik-Puani-Hesaplama-Araci) için gerekli modülleri içermektedir. Hesaplama aracındaki arayüz, bu modüllerde yer alan verilere göre otomatik olarak oluşturulmakta ve hesaplar bu modüllerde yer alan direktiflere göre *DocentlikCekirdek* sınıfı tarafından yapılmaktadır. Modüllerin yazımına veya kurallarda değişiklik meydana geldiğinde güncellenmesine katkı sağlamak isterseniz [Doçentlik Başvuru Şartları](https://www.uak.gov.tr/Sayfalar/docentlik/basvuru-sartlari/2020-ekim-d%C3%B6nemi.aspx)'nın, buradaki "src/" dizini altında yer alan php sınıflarına uyarlanmasına yardımcı olabilirsiniz. (Arayüzün hazırlanması ve işlemlerin yapılmasından sorumlu sınıf olan *DocentlikCekirdek* sınıfı kaynak kodlara dahil değildir.)
+Bu depo, [Doçentlik Puanı Hesaplama Aracı](http://www.atasoyweb.net/Docentlik-Puani-Hesaplama-Araci) için gerekli modülleri içermektedir. Hesaplama aracındaki arayüz, bu modüllerde yer alan verilere göre otomatik olarak oluşturulmakta ve hesaplar bu modüllerde yer alan direktiflere göre *DocentlikCekirdek* sınıfı tarafından yapılmaktadır. Modüller hazırlanırken [Doçentlik Başvuru Şartları](https://www.uak.gov.tr/Sayfalar/docentlik/basvuru-sartlari/2020-ekim-d%C3%B6nemi.aspx)'nın dikkate alınmaktadır. (Arayüzün hazırlanması ve işlemlerin yapılmasından sorumlu sınıf olan *DocentlikCekirdek* sınıfı şimdilik kaynak kodlara dahil değildir.)
 
 ## Güncel Modüller
 * **T9.php [12/01/2021]:** Tablo 9 - Mühendislik Temel Alanı
